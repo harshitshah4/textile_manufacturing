@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include textile_manufacturing *.css
+recursive-include textile_manufacturing *.csv
+recursive-include textile_manufacturing *.html
+recursive-include textile_manufacturing *.ico
+recursive-include textile_manufacturing *.js
+recursive-include textile_manufacturing *.json
+recursive-include textile_manufacturing *.md
+recursive-include textile_manufacturing *.png
+recursive-include textile_manufacturing *.py
+recursive-include textile_manufacturing *.svg
+recursive-include textile_manufacturing *.txt
+recursive-exclude textile_manufacturing *.pyc
