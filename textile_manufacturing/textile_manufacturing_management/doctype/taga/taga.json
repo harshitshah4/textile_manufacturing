@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "autoname": "TAGA.#####",
+ "creation": "2021-05-17 15:51:03.824779",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "taga_barcode",
+  "piece_number",
+  "taga_metre",
+  "taga_weight"
+ ],
+ "fields": [
+  {
+   "fetch_from": "piece_number",
+   "fieldname": "taga_barcode",
+   "fieldtype": "Barcode",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Taga Barcode"
+  },
+  {
+   "fieldname": "piece_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Piece Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "taga_metre",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Taga Metre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "taga_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Taga Weight"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-05-17 19:12:35.020949",
+ "modified_by": "Administrator",
+ "module": "Textile Manufacturing Management",
+ "name": "Taga",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

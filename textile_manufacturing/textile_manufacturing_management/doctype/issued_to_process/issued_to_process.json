@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "autoname": "PROC.#####",
+ "creation": "2021-05-17 20:54:30.590708",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "supplier_name",
+  "date",
+  "issued_tagas_section",
+  "taga_table",
+  "total_metres"
+ ],
+ "fields": [
+  {
+   "fieldname": "total_metres",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Metres",
+   "non_negative": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "issued_tagas_section",
+   "fieldtype": "Section Break",
+   "label": "Issued Tagas"
+  },
+  {
+   "fieldname": "taga_table",
+   "fieldtype": "Table",
+   "label": "Taga Table",
+   "options": "Taga Link",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "supplier.supplier_name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-05-17 21:41:39.359812",
+ "modified_by": "Administrator",
+ "module": "Textile Manufacturing Management",
+ "name": "Issued to Process",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

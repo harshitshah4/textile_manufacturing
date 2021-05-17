@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "autoname": "FBIN.#####",
+ "creation": "2021-05-17 15:53:10.345134",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "date",
+  "quality",
+  "taga_information_section",
+  "taga_table",
+  "total_metres",
+  "total_weight",
+  "taga"
+ ],
+ "fields": [
+  {
+   "fieldname": "taga_table",
+   "fieldtype": "Table",
+   "label": "Taga Table",
+   "options": "Taga",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "total_metres",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Metres",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_weight",
+   "fieldtype": "Float",
+   "label": "Total Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Link",
+   "label": "Quality",
+   "options": "Quality",
+   "reqd": 1
+  },
+  {
+   "fieldname": "taga_information_section",
+   "fieldtype": "Section Break",
+   "label": "Taga Information"
+  },
+  {
+   "fieldname": "taga",
+   "fieldtype": "Link",
+   "label": "Taga",
+   "options": "Taga"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-05-17 20:28:08.439683",
+ "modified_by": "Administrator",
+ "module": "Textile Manufacturing Management",
+ "name": "Fabric Inward",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
