@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "FBIN.#####",
  "creation": "2021-05-17 15:53:10.345134",
  "doctype": "DocType",
@@ -12,8 +11,7 @@
   "taga_information_section",
   "taga_table",
   "total_metres",
-  "total_weight",
-  "taga"
+  "total_weight"
  ],
  "fields": [
   {
@@ -21,8 +19,7 @@
    "fieldtype": "Table",
    "label": "Taga Table",
    "options": "Taga",
-   "reqd": 1,
-   "set_only_once": 1
+   "reqd": 1
   },
   {
    "fieldname": "total_metres",
@@ -62,17 +59,9 @@
    "fieldname": "taga_information_section",
    "fieldtype": "Section Break",
    "label": "Taga Information"
-  },
-  {
-   "fieldname": "taga",
-   "fieldtype": "Link",
-   "label": "Taga",
-   "options": "Taga"
   }
  ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-05-17 20:28:08.439683",
+ "modified": "2021-05-20 01:21:39.767599",
  "modified_by": "Administrator",
  "module": "Textile Manufacturing Management",
  "name": "Fabric Inward",

@@ -2,26 +2,59 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Fabric Inward', {
-	'before_save':function(frm) {
-		console.log("Helllooooo")
-		const taga_details = frm.doc.taga_table;
-
-
-		for(const i in taga_details){
-			console.log(taga_details[i].name)
-		}
-
-	}
+	
 });
 
 
 frappe.ui.form.on('Taga', {
+	'taga_table_add':function(frm,cdt,cdn){	
+		const taga_details = frm.doc.taga_table;
+		var total_metres = 0;
+		var total_weight = 0;
+		
+		for(const i in taga_details){
+			if(!isNaN(taga_details[i].taga_metre)){
+				total_metres += parseFloat(taga_details[i].taga_metre);
+			}
+			
+			if(!isNaN(taga_details[i].taga_weight)){
+				total_weight += parseFloat(taga_details[i].taga_weight);
+			}
+		}
+
+		frm.set_value('total_metres',total_metres);
+		frm.set_value('total_weight',total_weight);
+	},
+	'taga_table_remove':function(frm,cdt,cdn){
+		const taga_details = frm.doc.taga_table;
+		var total_metres = 0;
+		var total_weight = 0;
+		
+		for(const i in taga_details){
+			if(!isNaN(taga_details[i].taga_metre)){
+				total_metres += parseFloat(taga_details[i].taga_metre);
+			}
+			
+			if(!isNaN(taga_details[i].taga_weight)){
+				total_weight += parseFloat(taga_details[i].taga_weight);
+			}
+			
+		}
+
+		frm.set_value('total_metres',total_metres);
+		frm.set_value('total_weight',total_weight);
+	},
 	'taga_metre': function(frm,cdt,cdn) {
+		console.log("Herrree")
 		const taga_details = frm.doc.taga_table;
 		var total_metres = 0;
 		
 		for(const i in taga_details){
-			total_metres += taga_details[i].taga_metre;
+			if(!isNaN(taga_details[i].taga_metre)){
+				total_metres += parseFloat(taga_details[i].taga_metre);
+			}
+			
+			
 		}
 
 		frm.set_value('total_metres',total_metres);
@@ -31,7 +64,9 @@ frappe.ui.form.on('Taga', {
 		var total_weight = 0;
 		
 		for(const i in taga_details){
-			total_weight += taga_details[i].taga_weight;
+			if(!isNaN(taga_details[i].taga_weight)){
+				total_weight += parseFloat(taga_details[i].taga_weight);
+			}
 		}
 	
 		frm.set_value('total_weight',total_weight);

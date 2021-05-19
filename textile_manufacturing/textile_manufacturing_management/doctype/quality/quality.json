@@ -1,6 +1,5 @@
 {
- "actions": [],
- "autoname": "QLTY-{quality}-##",
+ "autoname": "format:QLTY-{quality}-{##}",
  "creation": "2021-05-17 18:46:52.653515",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -17,9 +16,7 @@
    "reqd": 1
   }
  ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-05-17 19:21:14.589494",
+ "modified": "2021-05-20 00:25:01.250371",
  "modified_by": "Administrator",
  "module": "Textile Manufacturing Management",
  "name": "Quality",

@@ -1,6 +1,5 @@
 {
- "actions": [],
- "autoname": "SUPP-{supplier_name}-###",
+ "autoname": "format:SUPP-{supplier_name}-{###}",
  "creation": "2021-05-17 18:40:54.153715",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -20,9 +19,7 @@
    "reqd": 1
   }
  ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-05-17 19:20:57.872628",
+ "modified": "2021-05-20 00:08:34.148672",
  "modified_by": "Administrator",
  "module": "Textile Manufacturing Management",
  "name": "Supplier",
